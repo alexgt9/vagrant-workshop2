@@ -9,7 +9,4 @@ class workshop {
 	group { 'puppet':
 		ensure => present,
 	}
-	
-	class{ workshop::repos: }
 }
-

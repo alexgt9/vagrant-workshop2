@@ -8,7 +8,7 @@ class workshop::repos {
         purge_sources_list_d => true,
         purge_preferences_d  => true,
     }
-	
+
 	apt::source {
         'debian_wheezy':
             location            => 'http://debian.mirrors.ovh.net/debian/',
