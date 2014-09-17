@@ -1,0 +1,50 @@
+## Repositories
+
+    apt::source {
+        'debian_wheezy':
+            location            => 'http://debian.mirrors.ovh.net/debian/',
+            release             => 'wheezy',
+            repos               => 'main contrib non-free',
+            include_src         => true,
+    }
+
+    apt::source {
+        'debian_security':
+            location            => 'http://security.debian.org/',
+            release             => 'wheezy/updates',
+            repos               => 'main contrib non-free',
+            include_src         => true,
+    }
+
+
+    apt::source {
+        'debian_volatile':
+            location            => 'http://ftp.de.debian.org/debian/',
+            release             => 'wheezy-updates',
+            repos               => 'main contrib non-free',
+            include_src         => true,
+    }
+
+    apt::source {
+        '10gen':
+            location    => 'http://downloads-distro.mongodb.org/repo/debian-sysvinit',
+            release     => 'dist',
+            repos       => '10gen',
+            key         => '7F0CEB10',
+            key_server  => 'keyserver.ubuntu.com',
+            include_src => false,
+    }
+
+
+## index.html
+<html>
+<head>
+</head>
+<body>
+<h1>Hello world</h1>
+</body>
+</html>
+
+## info.php
+<?php
+phpinfo();

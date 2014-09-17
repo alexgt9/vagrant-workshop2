@@ -1,0 +1,5 @@
+http://docs.puppetlabs.com/references/latest/type.html
+http://forge.puppetlabs.com/
+http://docs.puppetlabs.com/puppet/latest/reference/lang_run_stages.html
+http://docs.puppetlabs.com/references/latest/function.html
+http://docs.vagrantup.com/v2/
