@@ -5,7 +5,3 @@ class{ workshop::repos:
 }
 class{ workshop: }
 class{ workshop::webserver: }
-
-workshop::apache::vhost{
-	'alex':
-}

@@ -15,6 +15,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.customize ["modifyvm", :id, "--memory", "1024"]
   end
 
+  # Configuration for different environments using hostnames and nodes
+  # config.vm.define "devel" do |devel|
+  #   devel.hostname "development"
+  # end
+  #
+  # config.vm.define "testing" do |testing|
+  #   testing.hostname "development"
+  # end
+
   #
   # View the documentation for the provider you're using for more
   # information on available options.

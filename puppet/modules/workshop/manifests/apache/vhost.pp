@@ -32,7 +32,7 @@ define workshop::apache::vhost (
     file { $vhost_link:
         ensure => link,
         target => $vhost_file,
-        require => [File[$vhost_links],File[$vhost_file]]
+        require => [File[$vhost_links],File[$vhost_file]],
         notify => Service['apache2'],
     }
 }
